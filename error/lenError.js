@@ -6,7 +6,7 @@
  * @param {HTMLElement} elem - The DOM element where text will be populated if it exceeds the limit.
  * @param {string} errorMsg
  */
-export const charCount = (text = "", limit = 50, elem = null, errorMsg = "") => {
+export const lenError = (text = "", limit = 50, elem = null, errorMsg = "") => {
     if (text.length >= limit) {
         elem.textContent = errorMsg;
     }
